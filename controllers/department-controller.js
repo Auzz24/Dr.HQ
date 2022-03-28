@@ -1,4 +1,4 @@
-const { Department } = require('../model');
+const { Department } = require('../models');
 
 const departmentController = {
 
