@@ -10,10 +10,10 @@ const DepartmentSchema = new Schema({
     departmentFloor:{
         type: String
     },
-    officeNumebr:{
+    officeNumber:{
         type: String
     },
-    departmenDoctors:[
+    departmentDoctors:[
         {
             type: Schema.Types.ObjectId,
             ref: 'doctor'
