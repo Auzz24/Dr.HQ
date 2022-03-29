@@ -1,30 +1,30 @@
 const { Schema, model } = require('mongoose');
 
 const DepartmentSchema = new Schema({
-    departmentName:{
+    departmentName: {
         type: String
     },
-    departmentLocation:{
+    departmentLocation: {
         type: String
     },
-    departmentFloor:{
+    departmentFloor: {
         type: String
     },
-    officeNumber:{
+    officeNumber: {
         type: String
     },
-    departmentDoctors:[
+    departmentDoctors: [
         {
             type: Schema.Types.ObjectId,
             ref: 'doctor'
-    }
-],
-    departmentNurses:[
+        }
+    ],
+    departmentNurses: [
         {
             type: Schema.Types.ObjectId,
             ref: 'nurse'
-    }
-]
+        }
+    ]
 
 });
 
