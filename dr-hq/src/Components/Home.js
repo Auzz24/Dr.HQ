@@ -11,7 +11,7 @@ function Home() {
 
       <div bgImage={require("./Style/lobby2.jpg")}>
           <div style={{ height: 1000 }}>
-              
+            
           </div>
     </div>
   )

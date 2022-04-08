@@ -1,8 +1,8 @@
 
 
 import React, { Component } from 'react';
-// import {Parallax} from 'react-scroll-parallax';
-// import {Row, Col} from "reactstrap";
+import {Parallax} from 'react-scroll-parallax';
+import {Row, Col} from "reactstrap";
 import "./Style/Components.css";
 
 
