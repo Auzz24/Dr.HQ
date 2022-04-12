@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> Signup Today!</title>
+		<script type="text/javascript">
+			var today = new Date();
+			var dd = today.getDate();
+			var mm = today.getMonth()+1;
+			var yyyy = today.getFullYear();
+ 			if(dd<10){
+        		dd='0'+dd
+    		} 
+    		if(mm<10){
+        		mm='0'+mm
+   				 } 
+
+				today = yyyy+'-'+mm+'-'+dd;
+				document.getElementByClass("dob").setAttribute("max", today);
+
+		</script>
+		<link rel="stylesheet" type="text/css" href="css\patientlogin.css">
+	
+	</head>
+	<script>
+	function validateForm(){
+		
+		var name=document.forms["myForm"]["name"].value;
+		var mobile_no = document.forms["myForm"]["mobile"].value;
+		var gender = document.forms["myForm"]["gender"];
+
+		// First name
+		    if (firstName == "") {
+		        alert("First name must be filled out");
+		        return false;
+		    }
+		    if(firstName.match(/^[a-zA-Z]+$/)==null){
+				alert("First Name must contain only alphabets");
+				return false;
+			}
+			
+			// Gender
+			genValue = false;
+	        for(i = 0; i < gender.length; i++){
+	            if(gender[i].checked == true){
+	                genValue = true;    
+	            }
+	        }
+	        if(!genValue){
+	            alert("Please choose the gender");
+	            return false;
+	        }
+		
+		}	
+			
+    
+</script>
+
+	<body>
+		<nav>
+                <div class ="navigation">Dr.HQ</div>
+                <ul>
+                    <li><a href="" >HOME</a></li>
+                    <li><a href="" >DEPARTMENTS</a></li>
+                    <li><a href="" >FOR PROFESSIONALS</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </nav><br><br>
+            <h1 style="color: blue;text-align: center;font-style: italic;padding-top: 50px"> WELCOME</h1>
+		<h3 style="color: blue;text-align: center;font-style: italic"> Precaution is better than cure!</h3>
+		
+
+		<div class="patient">
+		<form action="signup.php"method="post" autocomplete="on" onsubmit="return validateForm()" name="myForm">
+			
+		<label>NAME</label> 
+		<input type="text" name="name" autofocus> <br><br>
+		<label>GENDER </label>
+		<input type="radio" name="gender" value="male"> Male 
+		<input type="radio" name="gender" value="female"> Female 
+		<input type="radio" name="gender" value="other"> Other <br><br>
+		<label>PHONE NUMBER</label>
+		<input type="tel" name="mobile"><br><br>
+		<label>DATE OF BIRTH</label> <input type="date" name="dob" min="1920-01-01" max="2018-10-12" ><br/><br/>
+		<label>EMAIL ADDRESS </label>
+		<input type="text" type="email" name="email"><br><br>
+		
+		<label>SELECT STATE </label> 
+		<select >
+    	<option value="New York"> New York </option>
+    	<option value="Texas"> Texas </option>
+    	<option value="TEST"> TEST </option>
+    	<option value="TEST"> TEST </option> 
+    	<option value="TEST"> TEST </option> 
+  		<option value="TEST"> TEST </option> 
+  		<option value="TEST"> TEST </option> <br/><br/>
+  		
+  		</select> <br><br>
+  		<label>PASSWORD </label><input type="password" name="password_1"><br><br>
+ 		<label>CONFIRM PASSWORD </label><input type="password" name="password_2"><br><br>
+ 		
+ 		<button type="submit" value="Submit" >SUBMIT</button>
+  <br> <br>
+
+
+ </form>
+  </div>
+ 	
+ </body>
+ </html>

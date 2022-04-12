@@ -1,0 +1,68 @@
+
+   
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> Login</title>
+		<script type="text/javascript">
+			var today = new Date();
+			var dd = today.getDate();
+			var mm = today.getMonth()+1;
+			var yyyy = today.getFullYear();
+ 			if(dd<10){
+        		dd='0'+dd
+    		} 
+    		if(mm<10){
+        		mm='0'+mm
+   				 } 
+
+				today = yyyy+'-'+mm+'-'+dd;
+				document.getElementByClass("date").setAttribute("max", today);
+
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/patientLogin.css">
+	
+	</head>
+	
+	<body>
+		<nav>
+                <div class ="navigation">Dr.HQ</div>
+                <ul>
+                <li><a class="log" href="" >LOGOUT</a></li></ul>
+                </nav><br><br>
+        <h1 style="color: blue;text-align: center;font-style: italic;padding-top: 50px"> WELCOME</h1>
+		<h3 style="color: blue;text-align: center;font-style: italic"> Book an appointment online!</h3>
+		
+		<div class="patient">
+		<form method="post"  name="loginForm">
+		<label>APPOINTMENT FOR</label>
+		<select class="department">
+	    <option value="gynaecology"> GYNAECOLOGY </option>
+    	<option value="neurology"> NEUROLOGY </option>
+    	<option value="dental"> DENTAL </option>
+    	<option value="cardiology"> CARDIOLOGY</option> 
+    	</select> <br><br><br>
+  		
+  		<label>SELECT DATE</label> <input type="date" name="date" min="1920-01-01" max="2018-10-12" ><br/><br/><br>
+  		
+  		<label>SELECT TIME SLOT</label>
+  		<select>
+  			<option value="1">11am-1pm</option>
+  			<option value="2">1pm-3pm</option>
+  			<option value="3">3pm-5pm</option>
+  			<option value="4">5pm-7pm</option>
+  			<option value="5">7pm-9pm</option>
+  			<option value="6">9pm-11pm</option>
+  		</select>
+		
+		
+  		<br><br><br>
+ 		<button style="height: 50px;width: 120px;background-color: green;color: white;font-weight: bold;" height=30>BOOK AN APPOINTMENT</button>
+  <br> <br>
+
+
+ </form>
+  </div>
+ 	
+ </body>
+ </html>
