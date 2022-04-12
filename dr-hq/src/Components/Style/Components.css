@@ -54,7 +54,15 @@ li{
       height: 600px;
   }
   
-
+#jumbo {
+  background-color: rgba(210, 180, 140, 0.9);
+  padding: 10%;
+  background-position: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
 
 
 .Footer{

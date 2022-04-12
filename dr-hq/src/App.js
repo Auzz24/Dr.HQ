@@ -21,7 +21,6 @@ function App() {
           {/* <Route exact path="/Login" component={Login}/> */}
           <Route exact path="/" component={Home}/>
         {/* </Switch> */}
-        <Footer/>
       </Router>
      
     </div>

@@ -13,19 +13,12 @@ const DepartmentSchema = new Schema({
     officeNumber:{
         type: String
     },
-    departmentDoctors:[
+    doctors:[
         {
             type: Schema.Types.ObjectId,
             ref: 'doctor'
     }
 ],
-    departmentNurses:[
-        {
-            type: Schema.Types.ObjectId,
-            ref: 'nurse'
-    }
-]
-
 });
 
 const Department = model('Department', DepartmentSchema);
