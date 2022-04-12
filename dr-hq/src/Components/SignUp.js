@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { validateEmail } from '../../utils/helpers';
+import { validateEmail } from '../utils/helpers';
 import './Style/Signup.css'; 
 
 function SignUp() {
@@ -8,7 +8,7 @@ function SignUp() {
 
     const [errorMessage, setErrorMessage] = useState('');
 
-    const { name, email, message } = formState;
+    const { name, email, address } = formState;
 
     function handleChange(e) {
         if (e.target.name === 'email') {
@@ -40,7 +40,8 @@ function SignUp() {
     return(
 <section>
 <div id="container">
-  <h1>&bull; Keep in Touch &bull;</h1>
+  <h1>&bull; Are You a DR? &bull;</h1>
+  <p> Sign up here to be featured</p>
   <div class="underline">
   </div>
   <div class="icon_wrapper">
@@ -65,15 +66,19 @@ function SignUp() {
     <div class="subject">
       <label for="subject"></label>
       <select placeholder="Subject line" name="subject" id="subject_input" required>
-        <option disabled hidden selected>Subject line</option>
-        <option>I'd like to start a project</option>
-        <option>I'd like to ask a question</option>
-        <option>I'd like to make a proposal</option>
+        <option disabled hidden selected>Select your Department</option>
+        <option>Emergency</option>
+        <option>Pediatrics</option>
+        <option>Surgery</option>
+        <option>Neurology</option>
+        <option>Oncology</option>
+        <option>Labor and Delivery</option>
+        <option>Other</option>
       </select>
     </div>
     <div class="message">
       <label for="message"></label>
-      <textarea name="message" placeholder="I'd like to chat about" id="message_input" cols="30" rows="5" defaultValue={message} onBlur={handleChange} required></textarea>
+      <input type="text" placeholder="What is your Address?" name="address" id="address_input" defaultValue={address} onBlur={handleChange}  required></input>
     </div>
     {errorMessage && (
                     <div>
@@ -81,7 +86,7 @@ function SignUp() {
                     </div>
                 )}
     <div class="submit">
-      <input type="submit" value="Send Message" id="form_button" onSubmit={handleSubmit}/>
+      <input type="submit" value="Send Message" id="new-post-form" onSubmit={handleSubmit}/>
     </div>
   </form>
 </div>

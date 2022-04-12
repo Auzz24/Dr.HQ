@@ -1,3 +1,4 @@
+
 button {
     overflow: visible;
   }
@@ -21,7 +22,8 @@ button {
   }
   
   #container {
-    border: solid 3px #474544;
+    background-color: rgba(210, 180, 140, 1);
+    border: solid 3px #302d2c;
     max-width: 768px;
     margin: 60px auto;
     position: relative;
@@ -33,7 +35,7 @@ button {
   }
   
   h1 {
-    color: #474544;
+    color: #302d2c;
     font-size: 32px;
     font-weight: 700;
     letter-spacing: 7px;
@@ -41,8 +43,11 @@ button {
     text-transform: uppercase;
   }
   
+  h1 p{
+    text-align: center;
+  }
   .underline {
-    border-bottom: solid 2px #474544;
+    border-bottom: solid 2px #302d2c;
     margin: -0.512em auto;
     width: 80px;
   }
@@ -54,7 +59,7 @@ button {
   
   .icon {
     display: block;
-    fill: #474544;
+    fill: #302d2c;
     height: 50px;
     margin: 0 auto;
     width: 50px;
@@ -68,8 +73,8 @@ button {
   input[type='text'], [type='email'], select, textarea {
       background: none;
     border: none;
-      border-bottom: solid 2px #474544;
-      color: #474544;
+      border-bottom: solid 2px #302d2c;
+      color: #302d2c;
       font-size: 1.000em;
     font-weight: 400;
     letter-spacing: 1px;
@@ -130,27 +135,27 @@ button {
   }
   
   ::-webkit-input-placeholder {
-      color: #474544;
+      color: #302d2c;
   }
   
   :-moz-placeholder { 
-      color: #474544;
+      color: #302d2c;
       opacity: 1;
   }
   
   ::-moz-placeholder {
-      color: #474544;
+      color: #302d2c;
       opacity: 1;
   }
   
   :-ms-input-placeholder {
-      color: #474544;
+      color: #302d2c;
   }
   
   #form_button {
     background: none;
-    border: solid 2px #474544;
-    color: #474544;
+    border: solid 2px #302d2c;
+    color: #302d2c;
     cursor: pointer;
     display: inline-block;
     font-family: 'Helvetica', Arial, sans-serif;
@@ -167,7 +172,7 @@ button {
   }
   
   #form_button:hover {
-    background: #474544;
+    background: #302d2c;
     color: #F2F3EB;
   }
   

@@ -3,7 +3,7 @@ import {Parallax} from 'react-scroll-parallax';
 import {Row, Col} from "reactstrap";
 import {Link} from 'react-router-dom';
 import "./Style/Components.css";
-import SignUp from './Signup';
+import SignUp from './SignUp';
 
 
 
