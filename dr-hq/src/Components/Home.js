@@ -28,6 +28,10 @@ function Home() {
                 </Link>
               </button>
             </div>
+            <div id="signup">
+              
+
+            </div>
 
       </div>
     </div>
