@@ -14,12 +14,12 @@ export default function CurrentPortfolio() {
                 return <Home />;
             case 'About':
                 return <About />;
-            case 'Test1':
-                return <Tes1 />;
-            case 'ContactUs':
-                return <ContactUs/>;
-            case 'Test2':
-                return <Test2 />;
+            // case 'Test1':
+            //     return <Test1 />;
+            // case 'ContactUs':
+            //     return <ContactUs/>;
+            // case 'Test2':
+            //     return <Test2 />;
             default:
                 console.log('default switch case has been provoked!');
         }
