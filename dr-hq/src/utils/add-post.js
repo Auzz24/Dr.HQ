@@ -8,7 +8,7 @@ async function newFormHandler(event) {
     const drAddress= document.querySelector('#drAddress').value;
 
     // "/api/doctors"
-    const response = await fetch(`/`, {
+    const response = await fetch(`/api/doctor`, {
       method: 'POST',
       body: JSON.stringify({
         drName,
