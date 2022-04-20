@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3005;
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/DrHQ', {
     useNewUrlParser: true,

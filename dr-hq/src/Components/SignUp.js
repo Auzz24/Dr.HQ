@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../utils/helpers';
 import './Style/Signup.css'; 
+import newFormHandler from '../utils/add-post'
 
 function SignUp() {
 
-    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+    const [formState, setFormState] = useState({ name: '', email: '', phone: '', address:'', department:'' });
 
     const [errorMessage, setErrorMessage] = useState('');
 
-    const { name, email, address } = formState;
+    const { name, email, address, phone, department } = formState;
 
     function handleChange(e) {
         if (e.target.name === 'email') {
@@ -35,6 +36,7 @@ function SignUp() {
 
     function handleSubmit(e) {
         e.preventDefault();
+        newFormHandler(formState)
     }
 
     return(
@@ -50,22 +52,22 @@ function SignUp() {
       <path d="M70.865,101.78c0,4.774,3.886,8.657,8.66,8.657c4.774,0,8.657-3.883,8.657-8.657c0-4.773-3.883-8.656-8.657-8.656    C74.751,93.124,70.865,97.006,70.865,101.78z"></path>
     </svg>
   </div>
-  <form action="#" method="post" id="contact_form">
+  <form method="post" id="contact_form">
     <div class="name">
       <label for="name"></label>
-      <input type="text" placeholder="My name is" name="name" id="name_input" defaultValue={name} onBlur={handleChange} required></input>
+      <input type="text" placeholder="My name is" name="name" id="name_input" defaultValue={name} onChange={handleChange} required></input>
     </div>
     <div class="email">
       <label for="email"></label>
-      <input type="email" placeholder="My e-mail is" name="email" id="email_input" defaultValue={email} onBlur={handleChange} required></input>
+      <input type="email" placeholder="My e-mail is" name="email" id="email_input" defaultValue={email} onChange={handleChange} required></input>
     </div>
     <div class="telephone">
       <label for="name"></label>
-      <input type="text" placeholder="My number is" name="telephone" id="telephone_input" required></input>
+      <input type="text" placeholder="My number is" name="phone" id="telephone_input" defaultValue={phone} onChange={handleChange} required></input>
     </div>
     <div class="subject">
       <label for="subject"></label>
-      <select placeholder="Subject line" name="subject" id="subject_input" required>
+      <select placeholder="Subject line" name="department" id="subject_input" defaultValue={department} onChange={handleChange} required>
         <option disabled hidden selected>Select your Department</option>
         <option>Emergency</option>
         <option>Pediatrics</option>
@@ -86,7 +88,7 @@ function SignUp() {
                     </div>
                 )}
     <div class="submit">
-      <input type="submit" value="Send Message" id="new-post-form" onSubmit={handleSubmit}/>
+      <button type="submit" value="Send Message" id="new-post-form" onSubmit={handleSubmit}>Submit! </button> 
     </div>
   </form>
 </div>
