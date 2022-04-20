@@ -1,0 +1,84 @@
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+li{
+    padding: 20px;
+}
+
+.Header{
+    height: 90px;    
+    background: url(./masks.jpg);
+    /* background-color: #394D6B;      */
+    color: #394D6B;
+    font-size: 30px;    
+    padding-top: 30px;    
+    font-family: "Copperplate", Courier, monospace;
+    font-size: 29px;
+    letter-spacing: 2.2px;
+    word-spacing: 2.4px;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.Home{
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    font-weight: 400;
+    font-family: sans-serif;
+    background: #12c2e9;  /* fallback for old browsers */
+    background: url(./lobby2.jpg);
+    
+  }
+  
+  body, html, .App, #root, .outer {
+    width: 100%;
+    height: 100%;
+  }
+
+  .container {
+      background-color: aliceblue;
+      opacity: .9;
+      padding-top: 150px;
+      width: 100px;
+      height: 600px;
+  }
+  
+#jumbo {
+  background-color: rgba(210, 180, 140, 0.9);
+  padding: 10%;
+  background-position: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+
+.Footer{
+    height: 90px;    
+    background: url(./masks.jpg);
+    /* background-color: #394D6B;      */
+    color: #394D6B;
+    font-size: 30px;    
+    padding-top: 30px;    
+    font-family: "Copperplate", Courier, monospace;
+    font-size: 29px;
+    letter-spacing: 2.2px;
+    word-spacing: 2.4px;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
