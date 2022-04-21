@@ -1,4 +1,4 @@
-const { Doctor } = require('../models');
+const { Doctor } = require('../server/models');
 
 const doctorController = {
 
