@@ -2,7 +2,7 @@ async function newFormHandler(formState) {
     
     // "/api/doctors"
     // const response = 
-    await fetch(`/api/doctor`, {
+    await fetch(`/doctor`, {
       method: 'POST',
       body: JSON.stringify(
         formState),
