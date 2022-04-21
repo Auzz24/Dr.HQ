@@ -5,25 +5,25 @@ const mongoose = require('mongoose');
 
 const { typeDefs, resolvers } = require('./schemas');
 const { authMiddleware } = require('./utils/auth');
-const db = require('./config/connection');
+// const db = require('./config/connection');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 const server = new ApolloServer({
-    typeDefs,
-    resolvers,
-    context: authMiddleware
-  });
+  typeDefs,
+  resolvers,
+  context: authMiddleware
+});
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/DrHQ', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
+  useNewUrlParser: true,
+  useUnifiedTopology: true
 });
 
 // Use this to log mongo queries being executed!
 mongoose.set('debug', true);
 
-app.use(require('../routes'));
+// app.use(require('../routes'));
 
 server.applyMiddleware({ app });
 
@@ -32,17 +32,14 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, '../client/build')));
-  }
+  app.use(express.static(path.join(__dirname, '../client/build')));
+}
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/build/index.html'));
-  });
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+});
 
-db.once('open', () => {
-    app.listen(PORT, () => {
-      console.log(`API server running on port ${PORT}!`);
-      console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
-    });
-  });
-  
+app.listen(PORT, () => {
+  console.log(`API server running on port ${PORT}!`);
+  console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
+})

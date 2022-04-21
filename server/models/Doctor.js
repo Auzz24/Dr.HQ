@@ -5,12 +5,7 @@ const DoctorSchema = new Schema({
     email: { type: String, lowercase: true },
     phone: { type: String, required: true },
     address: { type: String, required: true },
-    department:[
-        {
-            type: Schema.Types.ObjectId,
-            ref: 'department'
-        }
-    ]
+    department:{type: String}
 })
 
 const Doctor = model('Doctor', DoctorSchema);
