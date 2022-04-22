@@ -6,12 +6,27 @@ import Department from './Components/Department';
 import {BrowserRouter as Router,  Route} from "react-router-dom";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  createHttpLink,
+} from '@apollo/client';
+// import { setContext } from '@apollo/client/link/context';
+const httpLink = createHttpLink({
+  uri: '/graphql',
+});
+const client = new ApolloClient({
+  // Set up our client to execute the `authLink` middleware prior to making the request to our GraphQL API
+  link: httpLink,
+  cache: new InMemoryCache(),
+});
 
 function App() {
   return (
-    <div className="App">
-      
+    
+
+      <ApolloProvider client={client}>
       <Router>
       <Header/>
         {/* <Switch> */}
@@ -22,8 +37,8 @@ function App() {
           <Route exact path="/" component={Home}/>
         {/* </Switch> */}
       </Router>
-     
-    </div>
+      
+    </ApolloProvider>
   );
 }
 
