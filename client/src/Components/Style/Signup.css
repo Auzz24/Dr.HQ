@@ -22,7 +22,8 @@ button {
   }
   
   #container {
-    background-color: rgba(210, 180, 140, 1);
+    /* background-color: rgba(210, 180, 140, 1); */
+    background-color: rgba(199, 223, 239, 0.95);
     border: solid 3px #302d2c;
     max-width: 768px;
     margin: 60px auto;
@@ -43,8 +44,12 @@ button {
     text-transform: uppercase;
   }
   
-  h1 p{
+  h2{
+    color: hsl(15, 4%, 18%);
+    font-weight: 700;
+    /* letter-spacing: px; */
     text-align: center;
+    text-transform: uppercase;
   }
   .underline {
     border-bottom: solid 2px #302d2c;

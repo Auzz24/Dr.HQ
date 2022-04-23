@@ -57,7 +57,7 @@ function SignUp() {
     <section>
       <div id="container">
         <h1>&bull; Are You a DR? &bull;</h1>
-        <p> Sign up here to be featured</p>
+        <h2> Sign up here to be featured</h2>
         <div class="underline">
         </div>
         <div class="icon_wrapper">
