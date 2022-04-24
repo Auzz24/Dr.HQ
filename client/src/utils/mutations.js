@@ -12,7 +12,6 @@ export const LOGIN_USER = gql`
   }
 `;
 
-
 export const ADD_DOCTOR = gql`
 mutation addDoctor($name: String!, $email: String!, $phone: String!, $address: String!, $department: String ) {
     addDoctor(name: $name, email: $email, phone: $phone, address: $address, department: $department) {

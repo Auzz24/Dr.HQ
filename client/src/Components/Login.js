@@ -4,6 +4,7 @@ import React, { Component, useState } from 'react';
 import {Parallax} from 'react-scroll-parallax';
 import {Row, Col} from "reactstrap";
 import "./Style/Components.css";
+// import "./Style/Login.css";
 
 import { validateEmail } from '../utils/helpers';
 import { ADD_USER } from '../utils/mutations';
@@ -69,7 +70,7 @@ function Home() {
           <div style={{ height: 1000 }}>
 
 
-          <form onSubmit={handleSubmit} class="container">
+          <form onSubmit={handleSubmit} class="container" id="loginContainer">
                 <h3>Login</h3>
 
                 <div className="form-group">
@@ -79,7 +80,7 @@ function Home() {
 
                 <div className="form-group">
                     <label>Last name</label>
-                    <input type="text" className="form-control" placeholder="Last name" name="lastName" id="name_input" defaultValue={lastName} onChange={handleChange} required></input>
+                    <input type="text" className="form-control" placeholder="Last name" name="firstName"id="name_input" defaultValue={lastName} onChange={handleChange} required></input>
                 </div>
 
                 <div className="form-group">
