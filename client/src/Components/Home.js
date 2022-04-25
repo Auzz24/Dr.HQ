@@ -26,7 +26,7 @@ function Home() {
           tattooed bespoke irony mumblecore Shoreditch deep v polaroid McSweeney's bitters  */}
               </p>
               <button>
-                <Link to="/Doctor">
+                <Link to="/AllDoctors">
                   FIND YOUR DOCTOR HERE!
                 </Link>
               </button>
