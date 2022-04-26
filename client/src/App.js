@@ -4,6 +4,7 @@ import Doctor from './Components/Doctor.js';
 import Footer from './Components/Footer.js';
 import Login from './Components/Login.js';
 import AllDoctors from './Components/AllDoctors.js'
+import Signin from './Components/Signin'
 // import Search from './Components/Search.js'
 import Department from './Components/Department';
 import {BrowserRouter as Router,  Route} from "react-router-dom";
@@ -39,6 +40,7 @@ function App() {
           <Route exact path="/Doctor" component={Doctor}/>
           <Route exact path="/AllDoctors" component={AllDoctors}/>
           <Route exact path="/Login" component={Login}></Route>
+          <Route exact path="/Signin" component={Signin}></Route>
           {/* <Route exact path="/Search" component={Search}></Route> */}
           {/* <Route exact path="/Login" component={Login}/> */}
           <Route exact path="/" component={Home}/>

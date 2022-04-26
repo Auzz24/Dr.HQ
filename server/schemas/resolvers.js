@@ -19,7 +19,10 @@ const resolvers = {
   },
   Mutation: {
     addUser: async (parent, args) => {
+      console.log("here!")
+      console.log(args)
       const user = await User.create(args);
+      console.log(user)
       const token = signToken(user);
 
       return { token, user };
@@ -35,7 +38,8 @@ const resolvers = {
         throw new AuthenticationError('Incorrect credentials');
       }
 
-      const correctPw = await user.isCorrectPassword(password);
+      // const correctPw = await user.isCorrectPassword(password);
+      const correctPw = user.password == password;
 
       if (!correctPw) {
         throw new AuthenticationError('Incorrect credentials');

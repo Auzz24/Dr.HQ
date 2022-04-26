@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import Auth from '../utils/auth'
 import "./Style/Components.css";
 
 
@@ -20,9 +21,17 @@ function Header() {
               </Link>
           </li>
           <li>
-              <Link to="/Login">
+              {
+              Auth.loggedIn()?
+              (<Link to="#" onClick={() => {
+                  Auth.logout()
+              }}>
+              Logout
+              </Link>):
+              (<Link to="/Login">
               Login
-              </Link>
+              </Link>)
+            }
           </li>
 
       </ul>
