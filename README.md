@@ -39,19 +39,13 @@
 
   ## Description
 
-   This apppliation will help patients:
+   This apppliation will help:
 
-* 		View list of doctors from different speciality
-* 		View availbale surgeries/therapies options
-* 		Schedule an appointment at a particular time
-* 		View application progress status
-* 		Get medical reports
+* 	  As a user, view list of doctors from different specialities
+* 	  As a user, find a doctor that is close to you
+* 		As a user, schedule an appointment through Calendly
+* 		As a doctor, get moroe buisness by adding your information to be featured in "Find a Doctor"
 
-This will help doctors:
-
-* 		View thier appointments
-* 		Show thier availability for the hospital
-* 		Track patients application status
 
   ## Languages
   HTML, CSS, JavaScript,ES6,Node, Bootstrap, jQuery, React

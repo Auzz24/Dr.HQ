@@ -1,20 +1,20 @@
-import React, { useState } from 'react';
-import './Style/Components.css';
+// import React, { useState } from 'react';
+// import './Style/Components.css';
 
 
 
-function Footer() {
-  return (
+// function Footer() {
+//   return (
 
 
-  <div className='Footer'>
+//   <div className='Footer'>
 
-<p>Thank you for visiting!
+// <p>Thank you for visiting!
 
-</p>
-</div>
+// </p>
+// </div>
 
 
-  );
-}
-export default Footer;
+//   );
+// }
+// export default Footer;

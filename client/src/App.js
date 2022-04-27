@@ -1,12 +1,10 @@
 import Home from './Components/Home.js';
 import Header from './Components/Header.js';
-import Doctor from './Components/Doctor.js';
-import Footer from './Components/Footer.js';
+// import Doctor from './Components/Doctor.js';
 import Login from './Components/Login.js';
 import AllDoctors from './Components/AllDoctors.js'
 import Signin from './Components/Signin'
-// import Search from './Components/Search.js'
-import Department from './Components/Department';
+// import Search from './Components/Search.js
 import {BrowserRouter as Router,  Route} from "react-router-dom";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -37,7 +35,7 @@ function App() {
       <Header/>
         {/* <Switch> */}
           <Route exact path="/Home" component={Home}/>
-          <Route exact path="/Doctor" component={Doctor}/>
+          {/* <Route exact path="/Doctor" component={Doctor}/> */}
           <Route exact path="/AllDoctors" component={AllDoctors}/>
           <Route exact path="/Login" component={Login}></Route>
           <Route exact path="/Signin" component={Signin}></Route>
