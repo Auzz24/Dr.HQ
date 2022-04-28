@@ -33,7 +33,7 @@
 
  `Welcome to Dr.HQ Medical Center`
 
-   Hospital Management App Project! As the name suggests, the app is designed to manage hospital tasks like booking an appointment, etc. The project technologies include Javascript, MySQL, PHP, and Bootstrap. Whereas the application’s web server is built on XAMPP. We believe that healthcare should be about you and your family. We strive to deliver safe, quality care compassionately and with absolute integrity. 
+  The Dr.HQ team is here to make finding a doctor easy. We believe that healthcare should be about you and your family, that is why we put your health first. We strive to deliver safe, quality and compassionate care. 
 
 
 
@@ -41,14 +41,14 @@
 
    This apppliation will help:
 
-* 	  As a user, view list of doctors from different specialities
+* 	  As a user, view a list of doctors from different specialities
 * 	  As a user, find a doctor that is close to you
 * 		As a user, schedule an appointment through Calendly
 * 		As a doctor, get moroe buisness by adding your information to be featured in "Find a Doctor"
 
 
   ## Languages
-  HTML, CSS, JavaScript,ES6,Node, Bootstrap, jQuery, React
+  React, CSS, JavaScript, ES6, Node, Bootstrap, jQuery, MongoDB, GraphQL
 
   ## Installation
  
@@ -57,10 +57,10 @@
   💻
 
   ## The Deployed Application
-
+https://warm-springs-73248.herokuapp.com/
   
   ## License
   MIT
 
   ## Additional Information
-  ✉️` Contact us with any questions`: [email](mailto:) , [GitHub]()<br />
+  ✉️` Contact us with any questions`: [email](mailto:austin.miller1424@gmail.com)
