@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import {Parallax} from 'react-scroll-parallax';
-import {Row, Col} from "reactstrap";
+// import {Parallax} from 'react-scroll-parallax';
+// import {Row, Col} from "reactstrap";
 import {Link} from 'react-router-dom';
 import "./Style/Components.css";
 import SignUp from './SignUp';
-import Login from './Login';
+// import Login from './Login';
 
 
 
