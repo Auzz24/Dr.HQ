@@ -50,7 +50,12 @@ if(loading){
 };
 
   return (
-    <div>
+    <div id="alldoctors">
+      <div id="fakedoctors">
+
+
+      </div>
+      <div id ="realdoctors">
       {/* <input onChange={onChange} value={search} /> */}
       {doctorData.map((doctorData, index) => (
         <div>
@@ -63,5 +68,7 @@ if(loading){
         </div>
       ))}
     </div>
+    </div>
+    
   );
 }
