@@ -35,6 +35,7 @@ function SignUp() {
 
     if (!errorMessage) {
       setFormState({ ...formState, [e.target.name]: e.target.value })
+      setErrorMessage('THANKS! After Submitting go to the Find A Doctor page to see your post');
     }
   }
 

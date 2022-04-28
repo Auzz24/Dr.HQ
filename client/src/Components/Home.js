@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 // import {Parallax} from 'react-scroll-parallax';
 // import {Row, Col} from "reactstrap";
 import {Link} from 'react-router-dom';
@@ -20,10 +20,6 @@ function Home() {
               <p>
               We believe that healthcare should be about you and your family, that is why we put your health first.
               We strive to deliver safe, quality and compassionate care. Let us take care of your family of in your time of need.  
-                  {/* seitan heirloom post-ironic pop-up iPhone mlkshk hella selfies fashion axe occupy readymade put a bird on it
-          messenger bag Wes Anderson Schlitz plaid Bushwick church-key lo-fi skateboard slow-carb hashtag trust fund
-          Williamsburg biodiesel fixie farm-to-table 8-bit banjo XOXO Banksy chillwave bicycle rights retro cliche
-          tattooed bespoke irony mumblecore Shoreditch deep v polaroid McSweeney's bitters  */}
               </p>
               <button>
                 <Link to="/AllDoctors">

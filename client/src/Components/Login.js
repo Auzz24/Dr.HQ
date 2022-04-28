@@ -94,6 +94,10 @@ function Home() {
                 </div>
 
                 <button type="submit" className="btn btn-dark btn-lg btn-block">Register</button>
+
+              <p>
+                AFTER YOU REGISTER PLEASE LOGIN
+              </p>
                 <p className="forgot-password text-right">
                     
                     Already registered <a href="/signin">log in?</a>
