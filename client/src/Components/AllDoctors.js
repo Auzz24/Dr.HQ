@@ -3,7 +3,8 @@ import { useQuery } from "@apollo/client";
 import { ALL_DOCTORS } from "../utils/queries";
 import "./Style/Components.css";
 import {Row, Col, Container} from 'reactstrap';
-
+import Auth from '../utils/auth'
+import {Link} from 'react-router-dom';
 
 
 export default function AddDoctor() {
@@ -72,6 +73,16 @@ if(loading){
           <p>Address: 946 Grey St.</p>
           <p>Phone: 945-765-4521</p>
           <p>Department: Pediatrics</p>
+          {
+              Auth.loggedIn()?
+              (<Link to="https://calendly.com/austin-miller1424" onClick={() => {
+                  Auth.logout()
+              }}>
+              Schedule HERE! 
+              </Link>):
+              (<Link to="/">
+              </Link>)
+            }
         </div>
         <div>
         <div class="icon_wrapper">
@@ -85,6 +96,16 @@ if(loading){
           <p>Address: 146 Dorian St.</p>
           <p>Phone: 543-467-5210</p>
           <p>Department: Neurology</p>
+          {
+              Auth.loggedIn()?
+              (<Link to="https://calendly.com/austin-miller1424" onClick={() => {
+                  Auth.logout()
+              }}>
+              Schedule HERE! 
+              </Link>):
+              (<Link to="/">
+              </Link>)
+            }
         </div>
         <div>
         <div class="icon_wrapper">
@@ -98,6 +119,16 @@ if(loading){
           <p>Address: 134 Emerald Dr.</p>
           <p>Phone: 675-218-3457</p>
           <p>Department: Pediatrics</p>
+          {
+              Auth.loggedIn()?
+              (<Link to="https://calendly.com/austin-miller1424" onClick={() => {
+                  Auth.logout()
+              }}>
+              Schedule HERE! 
+              </Link>):
+              (<Link to="/">
+              </Link>)
+            }
         </div>
         <div>
         <div class="icon_wrapper">
@@ -111,6 +142,16 @@ if(loading){
           <p>Address: 937 Heart Dr.</p>
           <p>Phone: 672-548-9423</p>
           <p>Department: Labor and Delivery</p>
+          {
+              Auth.loggedIn()?
+              (<Link to="https://calendly.com/austin-miller1424" onClick={() => {
+                  Auth.logout()
+              }}>
+              Schedule HERE! 
+              </Link>):
+              (<Link to="/">
+              </Link>)
+            }
         </div>
         <div>
         <div class="icon_wrapper">
@@ -124,6 +165,16 @@ if(loading){
           <p>Address: 17 Ringmore Dr</p>
           <p>Phone: 214-277-9093</p>
           <p>Department: Oncology</p>
+          {
+              Auth.loggedIn()?
+              (<Link to="https://calendly.com/austin-miller1424" onClick={() => {
+                  Auth.logout()
+              }}>
+              Schedule HERE! 
+              </Link>):
+              (<Link to="/">
+              </Link>)
+            }
         </div>
       </div>
       </Col>
@@ -144,6 +195,16 @@ if(loading){
           <p>Address: {doctorData.address}</p>
           <p>Phone: {doctorData.phone}</p>
           <p>Department: {doctorData.department}</p>
+          {
+              Auth.loggedIn()?
+              (<Link to="https://calendly.com/austin-miller1424" onClick={() => {
+                  Auth.logout()
+              }}>
+              Schedule HERE! 
+              </Link>):
+              (<Link to="/">
+              </Link>)
+            }
         </div>
       ))}
     </div>
